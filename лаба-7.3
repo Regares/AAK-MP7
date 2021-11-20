@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    float x, a, onekg, ykg;
+    int y;
+    printf("Введите количество килограмм и их cтоимость через пробел: ");
+    scanf("%f%f", &x, &a);
+    onekg = a/x;
+    printf("Стоимость одного килограмма конфет: %f рублей   ",  onekg);
+    printf("    Теперь введите количество килограмм y: ");
+    scanf("%d", &y);
+    ykg = y * onekg;
+    printf("Стоимость %d кг конфет: %f", y, ykg);
+    return 0;
+}
