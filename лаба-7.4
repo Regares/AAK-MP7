@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    float first, second, s1, s;
+    int t;
+    printf("Введите скорость в км/ч 1-го и 2-го автомобиля через пробел: ");
+    scanf("%f%f", &first, &second);
+    printf("Введите расстоянue в км между автомобилями: ");
+    scanf("%f", &s1);
+    printf("Введите время в чaсах: ");
+    scanf("%d", &t);
+    s = (first * t) + (second * t) + s1;
+    printf("Расстояние между автомобилями через %d ч: %f км", t, s);
+    return 0;
+}
