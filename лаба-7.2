@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float a, d;
+    printf("Введите значение угла в рaдианах: ");
+    scanf("%f", &a);
+    if ((a <= 0) || (a >= 2))
+    {
+        printf("Ошибка: значения угла выходит из условия.");
+    }
+    else
+    {
+        d = a * 180;
+        printf("Значение угла в гpaдусах: %f",  d);
+    }
+    return 0;
+}
