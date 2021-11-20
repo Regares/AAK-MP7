@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    float x, y, D, a1, b1, c1, a2, b2, c2;
+    printf("Введите A1, B1, C1 через пробелы: ");
+    scanf("%f%f%f", &a1, &b1, &c1);
+    printf("Введите A2, B2, C2 через пробелы: ");
+    scanf("%f%f%f", &a2, &b2, &c2);
+    D=((a1 * b2) - (a2 * b1));
+    x=((c1 * b2) - (c2 * b1)) / D;
+    y=((a1 * c2) - (a2 * c1)) / D;
+    printf("Решением системы уравненuй будут x = %f и y = %f", x, y);
+    return 0;
+}
